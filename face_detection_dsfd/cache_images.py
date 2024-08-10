@@ -5,8 +5,8 @@ import numpy as np
 import cv2
 import torch
 import torch.nn.functional as F
-from face_detection_dsfd.face_ssd_infer import SSD
-from face_detection_dsfd.data import widerface_640, TestBaseTransform
+from face_detection_dsfd.face_detection_dsfd.face_ssd_infer import SSD
+from face_detection_dsfd.face_detection_dsfd.data import widerface_640, TestBaseTransform
 
 
 def parse_images(input, postfix='.jpg', indices=None):

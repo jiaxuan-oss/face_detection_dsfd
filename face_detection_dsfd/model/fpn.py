@@ -4,13 +4,13 @@ import torch.nn.functional as F
 import torchvision.models as models
 from torch.autograd import Variable
 import numpy as np
-from face_detection_dsfd.model import cfg    # rm 'lib.', or cfg will create a new copy
-from face_detection_dsfd.model import _RPN_FPN
-from face_detection_dsfd.model import _RoIPooling
-from face_detection_dsfd.model import _RoICrop
-from face_detection_dsfd.model import RoIAlignAvg
-from face_detection_dsfd.model import _ProposalTargetLayer
-from face_detection_dsfd.model import _smooth_l1_loss, _affine_grid_gen
+from face_detection_dsfd.face_detection_dsfd.model import cfg    # rm 'lib.', or cfg will create a new copy
+from face_detection_dsfd.face_detection_dsfd.model import _RPN_FPN
+from face_detection_dsfd.face_detection_dsfd.model import _RoIPooling
+from face_detection_dsfd.face_detection_dsfd.model import _RoICrop
+from face_detection_dsfd.face_detection_dsfd.model import RoIAlignAvg
+from face_detection_dsfd.face_detection_dsfd.model import _ProposalTargetLayer
+from face_detection_dsfd.face_detection_dsfd.model import _smooth_l1_loss, _affine_grid_gen
 
 
 class _FPN(nn.Module):
